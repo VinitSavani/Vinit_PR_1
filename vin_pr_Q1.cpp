@@ -28,9 +28,9 @@ int main()
     cout << "Inch :- " ;
     cin >> d2.inch;
     
-    d3.feet = (d1.feet+d2.feet) + ((d1.inch+d2.inch)/(d1.feet+d2.feet)) ;
+    d3.feet = (d1.feet+d2.feet) +  ((d1.inch+d2.inch)/12);
     
-    d3.inch = (d1.inch+d2.inch) % (d1.feet+d2.feet) ;
+    d3.inch = (d1.inch+d2.inch) % 12 ;
     
     cout << endl << "Feet :- " << d3.feet << endl ;
 	cout << "inch :- " << d3.inch << endl ; 
